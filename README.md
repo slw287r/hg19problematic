@@ -64,3 +64,29 @@ done
 cat *_hs37_primary.bed | bedtk sort | bedtk merge | bgzip > problematic_hs37_primary.bed.gz
 tabix !$
 ```
+
+* Sizes
+
+| Subtracks (primary)     | Sizes (bp) |
+|-------------------------|--------|
+|comments_hs37_primary.bed|13905091|
+|deadZone_hs37_primary.bed|975021|
+|encBlacklist_hs37_primary.bed|274970000|
+|filterABQD_hs37_primary.bed|114447|
+|filterAlign_hs37_primary.bed|87763|
+|filterConflicting_hs37_primary.bed|1443677|
+|filterCov_hs37_primary.bed|34436|
+|filterHapNoVar_hs37_primary.bed|13941|
+|filterlt2Datasets_hs37_primary.bed|59190|
+|filterMap_hs37_primary.bed|50115|
+|filterSSE_hs37_primary.bed|10888|
+|ngsProblemHigh_hs37_primary.bed|2040103|
+|ngsProblemLow_hs37_primary.bed|3698806|
+|sangerDeadZone_hs37_primary.bed|610029|
+
+* Total size: 291,510,704
+
+## Reference
+
+* `bedtk` [https://github.com/lh3/bedtk](https://github.com/lh3/bedtk)
+* `bgzip` and `tabix` [https://github.com/samtools/tabix](https://github.com/samtools/tabix)
