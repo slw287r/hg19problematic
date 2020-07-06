@@ -65,7 +65,7 @@ cat *_hs37_primary.bed | bedtk sort | bedtk merge | bgzip > problematic_hs37_pri
 tabix !$
 ```
 
-* Sizes
+* Sizes by subtrack
 
 | Subtracks (primary)     | Sizes (bp) |
 |-------------------------|--------|
@@ -83,6 +83,10 @@ tabix !$
 |ngsProblemHigh_hs37_primary.bed|2040103|
 |ngsProblemLow_hs37_primary.bed|3698806|
 |sangerDeadZone_hs37_primary.bed|610029|
+
+* Sizes by chr
+
+![](problematic_hs37_primary.svg)
 
 * Total size: 291,510,704
 
